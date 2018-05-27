@@ -1,0 +1,50 @@
+<link rel="stylesheet" href="reset.css" />
+<link rel="stylesheet" href="style.css" />
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<body>
+  <div class="row">
+    <h1>Rock - Paper - Scissors </h1>
+    <hr />
+  </div>
+
+  <div class="row">
+    <div class="move_display">
+      <h3>Player</h3>
+      <div class="move" id="play_play">-</div>
+    </div>
+    <div class="move_display">
+      <h3>Computer</h3>
+      <div class="move" id="comp_play">-</div>
+    </div>
+  </div>
+
+
+  <div class="row">
+    <hr/>
+    <input type="button" value="&#9994;" onclick="Playround(0)">
+    <input type="button" value="&#9995;" onclick="Playround(1)">
+    <input type="button" value="&#9996;" onclick="Playround(2)">
+    <hr/>
+  </div>
+
+  <div class="row">
+    <div class="result_display">
+      <h3>Wins</h3>
+      <div class="result" id="result_win">0</div>
+    </div>
+    <div class="result_display">
+      <h3>Draws</h3>
+      <div class="result" id="result_draw">0</div>
+    </div>
+    <div class="result_display">
+      <h3>Losses</h3>
+      <div class="result" id="result_lose">0</div>
+    </div>
+  </div>
+
+
+  <script src="rock-paper-scissor.js">
+  </script>
+</body>
