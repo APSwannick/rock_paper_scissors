@@ -24,9 +24,9 @@
 
   <div class="row">
     <hr/>
-    <input type="button" value="&#9994;" onclick="Playround(0)">
-    <input type="button" value="&#9995;" onclick="Playround(1)">
-    <input type="button" value="&#9996;" onclick="Playround(2)">
+    <input type="button" class="selection_btn" value="&#9994;" onclick="Playround(0)">
+    <input type="button" class="selection_btn" value="&#9995;" onclick="Playround(1)">
+    <input type="button" class="selection_btn" value="&#9996;" onclick="Playround(2)">
     <hr/>
   </div>
 
@@ -45,6 +45,11 @@
     </div>
   </div>
 
+  <div class="row" id="final_row" style="visibility: hidden">
+    <div id="final_result"></div>
+    <br />
+    <input type="button" value="Play Again" onClick="window.location.reload()" id="play_again">
+  </div>
 
   <script src="rock-paper-scissor.js">
   </script>

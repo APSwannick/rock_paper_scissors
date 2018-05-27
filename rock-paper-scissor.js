@@ -42,4 +42,19 @@ function Playround(p_move) {
       bgfill("comp_play", "#94BF5C");
       break;
   }
+
+  let win_count = Number(document.getElementById("result_win").innerHTML);
+  let lose_count = Number(document.getElementById("result_lose").innerHTML);
+  let final_result = document.getElementById("final_result");
+  let final_row = document.getElementById("final_row");
+
+  if (final_result.innerHTML === "") {
+    if (win_count >= 10) {
+      final_result.innerHTML = "<h1>You Win!</h1>";
+      final_row.style.visibility = "visible";
+    } else if (lose_count >= 10) {
+      final_result.innerHTML = "<h1>You Lose!</h1>";
+      final_row.style.visibility = "visible";
+    }
+  }
 }
