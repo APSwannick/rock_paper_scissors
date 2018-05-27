@@ -18,8 +18,8 @@ function bgfill(result, color) {
 }
 
 function Playround(p_move) {
-  bgfill("play_play", "");
-  bgfill("comp_play", "");
+  bgfill("play_play", "#E2D4CE");
+  bgfill("comp_play", "#E2D4CE");
 
   fillchoice(p_move, "play_play");
   let c_move = compturn();
@@ -29,17 +29,17 @@ function Playround(p_move) {
   switch (result) {
     case 0: //draw - same choice
       increment("result_draw");
-      bgfill("play_play", "lightblue");
-      bgfill("comp_play", "lightblue");
+      bgfill("play_play", "#DCA386  ");
+      bgfill("comp_play", "#DCA386");
       break;
     case -2: //Rock to Scissor
     case 1: //Paper to Rock or Scissor to Paper
       increment("result_win");
-      bgfill("play_play", "lightgreen");
+      bgfill("play_play", "#94BF5C");
       break;
     default:
       increment("result_lose");
-      bgfill("comp_play", "lightgreen");
+      bgfill("comp_play", "#94BF5C");
       break;
   }
 }
